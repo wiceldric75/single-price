@@ -1,0 +1,252 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-content: center;
+  background: #e6eff5;
+}
+main {
+  position: relative;
+}
+.card {
+  display: grid;
+  width: 311px;
+  height: 722px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+}
+.section-join {
+  padding: 28px 24px;
+  width: 100%;
+  height: 267px;
+}
+.section-join h1 {
+  color: #2ab3b1;
+  font-family: Karla;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.25px;
+}
+.section-join h2 {
+  margin-top: 24px;
+  color: #c0df33;
+  font-family: Karla;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 133.333% */
+  letter-spacing: -0.187px;
+}
+.section-join p {
+  margin-top: 16px;
+  color: #9aa7be;
+  font-family: Karla;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 185.714% */
+  letter-spacing: -0.175px;
+}
+.section-subscription {
+  padding: 28px 24px;
+  width: 100%;
+  height: 228px;
+  background: #2ab3b1;
+}
+.section-subscription h1 {
+  color: #fff;
+  font-family: Karla;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.225px;
+}
+.price {
+  margin-top: 18px;
+  display: flex;
+  gap: 11px;
+}
+.section-subscription h2 {
+  color: #fff;
+  font-family: Karla;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+.section-subscription span {
+  color: #fff;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: -0.2px;
+  align-self: center;
+  opacity: 0.5;
+}
+.section-subscription p {
+  margin-top: 9px;
+  color: #fff;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: -0.2px;
+}
+.section-subscription button {
+  margin-top: 26px;
+  width: 263px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #c0df33;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  border: none;
+  color: #FFF;
+font-family: Karla;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+letter-spacing: -0.175px;
+}
+.section-why-us {
+  padding: 28px 24px;
+  width: 100%;
+  height: 228px;
+  background: #41b7b5;
+}
+.section-why-us h1 {
+  color: #fff;
+  font-family: Karla;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.225px;
+}
+.section-why-us p {
+  width: 238px;
+  margin-top: 18px;
+  color: #fff;
+  font-family: Karla;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: -0.175px;
+  opacity: 0.75;
+}
+.desktop {
+    display:  none;
+}
+@media (min-width: 1025px) {
+  .card {
+    width: 635px;
+    height: 475px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+  }
+  .section-join {
+    grid-area: section-join;
+    padding: 40px;
+    width: 635px;
+    height: 216px;
+  }
+  .section-join h1 {
+    font-size: 24px;
+    letter-spacing: -0.3px;
+  }
+  .section-join h2 {
+    font-size: 18px;
+    line-height: normal; /* 133.333% */
+    letter-spacing: -0.225px;
+  }
+  .section-join p {
+    margin-top: 11px;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+  }
+  .section-subscription {
+    grid-area: section-subscription;
+    padding: 40px;
+    width: 317.5px;
+    height: 259px;
+  }
+  .section-subscription p {
+    margin-top: 4px;
+  }
+  .price {
+    margin-top: 18px;
+    display: flex;
+    gap: 11px;
+  }
+  .section-subscription button {
+    margin-top: 26px;
+    width: 237px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #c0df33;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+    border: none;
+  }
+  .section-why-us {
+    grid-area: section-why-us;
+    padding: 40px;
+    width: 317.5px;
+    height: 259px;
+    background: #41b7b5;
+  }
+  .section-why-us p {
+    margin-top: 24px;
+  }
+  .card {
+        /* Define the grid layout */
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+          "section-join section-join"
+          "section-subscription section-why-us";
+  }
+
+  .phone {
+    display: none;
+  }
+
+  .desktop {
+    display: inline;
+  }
+}
+/*
+.marker {
+  width: 25px;
+  height: 496px;
+  background-color: red;
+  position: absolute;
+  top: 0px;
+  right: 320px;
+  z-index: 4;
+}*/
